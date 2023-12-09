@@ -318,6 +318,7 @@
   border-radius: 150px !important;
   color: var(--fc-light) !important;
   background: #031227 !important;
+  padding: 20px 32px !important;
   border: none;
   font-family: var(--fm-montserrat);
   font-size: var(--fs-2sm);

@@ -27,7 +27,7 @@ const Accordiansection = () => {
               </h2>
               <div
                 id="flush-collapseOne"
-                className="accordion-collapse collapse"
+                className="accordion-collapse collapse show"
                 data-bs-parent="#accordionFlushExample"
               >
                 <div className="accordion-para mx-auto">
