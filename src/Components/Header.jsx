@@ -1,12 +1,14 @@
 import React from "react";
-
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const Header = () => {
   return (
     <div>
-      <header className="bg-img min-vh-100 d-flex flex-column">
+      <header className="bg-img d-flex flex-column">
         <nav className="p-4">
           <nav className="navbar navbar-expand-lg">
-            <div className="container">
+            <Container>
               <a
                 className="text-decoration-none logo ff-poppins color-light fw-6 fs-sm lh-150"
                 href="#"
@@ -62,11 +64,11 @@ const Header = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </Container>
           </nav>
         </nav>
         <div className="d-flex flex-grow-1 align-items-center">
-          <div className="container">
+          <Container>
             <h1 className="vitae ff-poppins fw-4 fs-1lg color-light lh-124">
               Vitae nunc, <span className="fw-7">blandit a odio</span>{" "}
             </h1>
@@ -81,7 +83,7 @@ const Header = () => {
             >
               Get Started
             </button>
-          </div>
+          </Container>
         </div>
       </header>
     </div>

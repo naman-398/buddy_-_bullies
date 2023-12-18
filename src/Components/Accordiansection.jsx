@@ -1,17 +1,18 @@
 import React from "react";
 import elispe3 from "../Images/elipse1.png";
+import { Container } from "react-bootstrap";
 const Accordiansection = () => {
   return (
     <div>
       <section className=" z-0 position-relative">
-<img src={elispe3} alt="elipse3" className="elipse3" />
-        <div id="faq" className="container position-relative z-1">
+        <img src={elispe3} alt="elipse3" className="elipse3 d-none d-md-block" />
+        <Container id="faq" className="position-relative z-1">
           <h3 className="faq  text-center fw-6 fs-lg ff-poppins color-light">
             FAQs
           </h3>
 
-          <div className="accordion pt-5" id="accordionFlushExample">
-            <div className=" bg-transparent p-3">
+          <div className="accordion pt-lg-5 pt-md-3 pt-1" id="accordionFlushExample">
+            <div className=" bg-transparent p-sm-3 p-2">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed  mx-auto "
@@ -38,7 +39,7 @@ const Accordiansection = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-transparent p-3">
+            <div className="bg-transparent p-sm-3 p-2">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed  mx-auto"
@@ -64,7 +65,7 @@ const Accordiansection = () => {
                 </div>
               </div>
             </div>
-            <div className=" bg-transparent p-3">
+            <div className=" bg-transparent p-sm-3 p-2">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed  mx-auto"
@@ -90,7 +91,7 @@ const Accordiansection = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-transparent p-3">
+            <div className="bg-transparent p-sm-3 p-2">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed  mx-auto"
@@ -117,7 +118,7 @@ const Accordiansection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </div>
   );

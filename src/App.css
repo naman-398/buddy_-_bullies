@@ -10,7 +10,7 @@
 
 .bg-img {
   background: url(./Images/header-img.png);
-  min-height: 100vh;
+  min-height: unset;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
   --fs-4sm: 14px;
   --fs-3sm: 16px;
   --fs-1md: 25px;
-  --fs-md: 30px;
+  --fs-md: 20px;
   --fs-lg: 50px;
   --fs-1lg: 46px;
   /*font-color*/
@@ -69,13 +69,13 @@
   font-weight: var(--fw-6);
 }
 .lh-150 {
-  line-height: 150%;
+  line-height: normal;
 }
 .fs-1lg {
   font-size: var(--fs-1lg);
 }
 .lh-124 {
-  line-height: 124%;
+  line-height: normal;
 }
 .fw-4 {
   font-weight: var(--fw-4);
@@ -121,7 +121,7 @@
 }
 
 .get-started {
-  padding: 15px 40px;
+  padding: 6px 22px;
   border-radius: 45.5px;
   border: 2px solid transparent;
   transition: all 200ms linear;
@@ -188,12 +188,12 @@
   border-radius: 20px;
 }
 .card-top-padding {
-  padding-top: 41px;
+  padding-top: 21px;
 }
 .art {
   font-weight: var(--fw-6);
   line-height: 100.5%;
-  margin-top: 44px;
+  margin-top: 15px;
 }
 .opacity-7 {
   opacity: 0.7;
@@ -203,15 +203,15 @@
 }
 
 .last-section-padding {
-  padding-top: 127px;
+  padding-top: 35px;
 }
 
 .margin-bottom-timeline {
-  margin-bottom: 74px;
+  margin-bottom: 20px;
 }
 
 .roadmap-top-padding {
-  padding-top: 131px;
+  padding-top: 40px;
 }
 
 .timeline {
@@ -282,7 +282,7 @@
 }
 
 .roadmap-para {
-  line-height: 182.5%;
+  line-height: normal;
   max-width: 404.58px;
   padding-bottom: 20px;
 }
@@ -299,18 +299,18 @@
 }
 
 .accordian-head-padding {
-  padding-top: 141px;
+  padding-top: 40px;
 }
 
 .faq {
-  padding-top: 110px;
+  padding-top: 30px;
 }
 
 .mb-26 {
   padding-bottom: 26px;
 }
 .lh-136 {
-  line-height: 136%;
+  line-height: normal;
 }
 
 .accordion-button {
@@ -352,7 +352,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background-color: #000a1a;
+  background-color: transparent;
   max-width: 800px;
   padding-top: 20px;
   opacity: 0.7;
@@ -374,15 +374,45 @@
   padding-top: 40px;
 }
 .cursor-pointer {
-  cursor: wait;
+  cursor: pointer;
 }
 .margin-top-footer-logo {
   margin-top: 106px;
 }
-
+.s2-svg-icon {
+  transition: all 300ms linear;
+}
+.s2-svg-icon:hover {
+  transform: translateY(-5px) scale(0.9);
+}
+.footer-icon-svg {
+  transition: all 300ms linear;
+}
+.footer-icon-svg:hover {
+  transform: translateY(-5px) scale(0.9);
+}
+.footer-icon {
+  position: relative;
+}
+.footer-icon::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  border-radius: 30%;
+  transition: all 300ms linear;
+  background-color: var(--fc-light);
+}
+.footer-icon:hover::after {
+  width: 100%;
+  left: 0;
+}
 .footer-para {
-  max-width: 388px;
+  max-width: 100%;
   margin-top: 21px;
+  opacity: 0.6;
 }
 .elipse1 {
   right: 0;
@@ -403,7 +433,7 @@
   z-index: 0;
 }
 .s3-top-padding {
-  padding-top: 86px;
+  padding-top: 40px;
 }
 .email {
   font-size: var(--fs-3sm);
@@ -457,7 +487,7 @@
     --fs-4sm: 14px;
     --fs-3sm: 16px;
     --fs-1md: 25px;
-    --fs-md: 30px;
+    --fs-md: 20px;
     --fs-lg: 50px;
     --fs-1lg: 54px;
   }
@@ -465,7 +495,25 @@
 
 @media (min-width: 576px) {
   .footer-para {
-    max-width: 100%;
+    max-width: 388px;
+  }
+  .s3-top-padding {
+    padding-top: 56px;
+  }
+  .card-top-padding {
+    padding-top: 41px;
+  }
+  .accordian-head-padding {
+    padding-top: 60px;
+  }
+  .last-section-padding {
+    padding-top: 57px;
+  }
+  .roadmap-top-padding {
+    padding-top: 60px;
+  }
+  .get-started {
+    padding: 15px 40px;
   }
   :root {
     /*font-size*/
@@ -476,7 +524,7 @@
     --fs-4sm: 14px;
     --fs-3sm: 16px;
     --fs-1md: 25px;
-    --fs-md: 30px;
+    --fs-md: 25px;
     --fs-lg: 50px;
     --fs-1lg: 70px;
   }
@@ -484,20 +532,53 @@
     padding: 40px 40px 32px 40px;
   }
   .roadmap-para {
+    line-height: 182.5%;
     padding-bottom: 40px;
   }
   .footer-padding {
     padding-top: 60px;
   }
+  .lh-150 {
+    line-height: 150%;
+  }
+
+  .lh-124 {
+    line-height: 124%;
+  }
+  .lh-136 {
+    line-height: 136%;
+  }
+  .art {
+    margin-top: 20px;
+  }
+  .margin-bottom-timeline {
+    margin-bottom: 35px;
+  }
+  .faq {
+    padding-top: 45px;
+  }
+  .bg-img {
+    min-height: 75vh;
+  }
 }
 
 @media (min-width: 768px) {
-  .footer-para {
-    max-width: 100%;
+  .s3-top-padding {
+    padding-top: 76px;
+  }
+  .accordian-head-padding {
+    padding-top: 75px;
+  }
+  .last-section-padding {
+    padding-top: 77px;
   }
   .footer-padding {
     padding-top: 180px;
   }
+  .roadmap-top-padding {
+    padding-top: 75px;
+  }
+  
   :root {
     /*font-size*/
     --fs-sm: 22px;
@@ -521,11 +602,23 @@
     background-repeat: no-repeat;
     width: 100%;
   }
+  .bg-img {
+    min-height: 100vh;
+  }
   .bg-footer {
     background-color: unset;
   }
   .roadmap-para {
     padding-bottom: 60px;
+  }
+  .art {
+    margin-top: 30px;
+  }
+  .margin-bottom-timeline {
+    margin-bottom: 50px;
+  }
+  .faq {
+    padding-top: 60px;
   }
 }
 @media (min-width: 992px) {
@@ -541,6 +634,18 @@
     --fs-md: 30px;
     --fs-lg: 50px;
     --fs-1lg: 70px;
+  }
+  .s3-top-padding {
+    padding-top: 86px;
+  }
+  .roadmap-top-padding {
+    padding-top: 91px;
+  }
+  .accordian-head-padding {
+    padding-top: 100px;
+  }
+  .last-section-padding {
+    padding-top: 97px;
   }
   .nav-icon-underline {
     position: relative;
@@ -575,6 +680,15 @@
   .roadmap-para {
     padding-bottom: 80px;
   }
+  .art {
+    margin-top: 44px;
+  }
+  .margin-bottom-timeline {
+    margin-bottom: 74px;
+  }
+  .faq {
+    padding-top: 90px;
+  }
 }
 @media (min-width: 1200px) {
   :root {
@@ -590,6 +704,12 @@
     --fs-lg: 50px;
     --fs-1lg: 70px;
   }
+  .roadmap-top-padding {
+    padding-top: 131px;
+  }
+  .accordian-head-padding {
+    padding-top: 141px;
+  }
   .para {
     line-height: 41px;
   }
@@ -601,6 +721,12 @@
   }
   .roadmap-para {
     padding-bottom: 115px;
+  }
+  .faq {
+    padding-top: 110px;
+  }
+  .last-section-padding {
+    padding-top: 127px;
   }
 }
 @media (min-width: 1400px) {
@@ -718,10 +844,6 @@
 
   .containertimeline {
     width: 100%;
-  }
-
-  .footer-para {
-    max-width: 100%;
   }
 
   .cartoon {

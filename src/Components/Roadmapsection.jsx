@@ -4,7 +4,7 @@ const Roadmapsection = () => {
   return (
     <div>
       <section className=" position-relative z-0 roadmap-top-padding">
-        <img src={elipse2} alt="elipse2" className="elipse2 d-none d-sm-block"/>
+        <img src={elipse2} alt="elipse2" className="elipse2 d-none d-md-block"/>
         <div id="roadmap" className="roadmapcontainer position-relative z-1">
           <h2 className="color-light ff-poppins fs-lg fw-6 text-center margin-bottom-timeline">
             Roadmap
@@ -40,7 +40,7 @@ const Roadmapsection = () => {
               <h2 className="color-light fs-md ff-poppins fw-6 lh-150 ps-3">
                 Q-2, 2022
               </h2>
-              <p className="roadmap-para ff-poppins color-light fs-3sm fw-4 opacity-7 pb-0 pe-3">
+              <p className="roadmap-para ff-poppins color-light fs-3sm fw-4 opacity-7 pb-0 ps-3">
                 Blandit sed penatibus elit tortor fermentum velit donec. Id
                 eleifend volutpat dolor netus auctor at. Volutpat sed auctor non
                 in commodo, felis viverra risus tristique.

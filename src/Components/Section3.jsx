@@ -5,6 +5,7 @@ import card_img3 from "../Images/card-img3.png";
 import card_img4 from "../Images/card-img4.png";
 import card_img5 from "../Images/card-img5.png";
 import card_img6 from "../Images/card-img6.png";
+import { Col, Container, Row } from "react-bootstrap";
 const myinfo = [
   {
     img: card_img1,
@@ -44,24 +45,24 @@ const myinfo = [
 ];
 const Section3 = () => {
   const mydata = myinfo.map((myinfo) => (
-    <div className="col-lg-4  col-md-6 col-12 card-top-padding">
-      <div className="page-card bg-card-color">
+    <Col lg={4} md={6} className="card-top-padding">
+      <div className="page-card bg-card-color cursor-pointer">
         <img src={myinfo.img} alt="card-img1" />
         <h2 className="art ff-poppins fs-md color-light fw-6 mb-0">
           {myinfo.para1}
         </h2>
-        <p className="card-para lh-150 fw-4 fs-3sm ff-poppins color-light opacity-7 mt-4">
+        <p className="card-para lh-150 fw-4 fs-3sm ff-poppins color-light opacity-7 mt-2 mt-md-3 mt-lg-4">
           {myinfo.para2}
         </p>
       </div>
-    </div>
+    </Col>
   ));
   return (
     <div className="bg-color">
       <section>
-        <div className="container s3-top-padding position-relative z-1">
-          <div className="row">{mydata}</div>
-        </div>
+        <Container className="container s3-top-padding position-relative z-1">
+          <Row className="row">{mydata}</Row>
+        </Container>
       </section>
     </div>
   );

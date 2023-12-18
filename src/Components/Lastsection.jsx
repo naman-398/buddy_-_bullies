@@ -2,16 +2,21 @@ import React from "react";
 import lastimg1 from "../Images/last-section1.png";
 import lastimg2 from "../Images/last-section2.png";
 import lastimg3 from "../Images/last-section3.png";
+import { Col, Container, Row } from "react-bootstrap";
 const Lastsection = () => {
   return (
     <div>
       <section className="bg-color">
-        <div id="team" className="container last-section-padding">
+        <Container id="team" className="last-section-padding">
           <div className="color-light ff-poppins fs-lg fw-6 text-center">
             Our Team
           </div>
-          <div className="row pt-5">
-            <div className="col-lg-4 col-md-6 col-12 d-flex align-items-center flex-column">
+          <Row className="row pt-5 justify-content-center">
+            <Col
+              lg={4}
+              md={6}
+              className="d-flex align-items-center flex-column"
+            >
               <img src={lastimg1} alt="1" />
               <div className="pt-4">
                 <p className="ff-poppins fw-6 fs-md color-light lh-136 m-0 text-center">
@@ -21,8 +26,12 @@ const Lastsection = () => {
                   Pruduct Designer
                 </p>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12 d-flex align-items-center flex-column">
+            </Col>
+            <Col
+              lg={4}
+              md={6}
+              className="d-flex align-items-center flex-column"
+            >
               <img src={lastimg2} alt="2" />
               <div className="pt-4">
                 <p className="ff-poppins fw-6 fs-md color-light lh-136 m-0 text-center">
@@ -32,8 +41,12 @@ const Lastsection = () => {
                   Artist
                 </p>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12 d-flex align-items-center  flex-column">
+            </Col>
+            <Col
+              lg={4}
+              md={6}
+              className="d-flex align-items-center  flex-column"
+            >
               <img src={lastimg3} alt="3" />
               <div className="pt-4">
                 <p className="ff-poppins fw-6 fs-md color-light lh-136 m-0 text-center">
@@ -43,9 +56,9 @@ const Lastsection = () => {
                   Developer
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </div>
   );

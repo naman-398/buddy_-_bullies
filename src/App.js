@@ -7,8 +7,8 @@ import Roadmapsection from './Components/Roadmapsection';
 import Accordiansection from './Components/Accordiansection';
 import Lastsection from './Components/Lastsection';
 import Footer from './Components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 function App() {
   return (
     <div className="bg-color">
